@@ -6,7 +6,7 @@
 #    By: adchebbi <adchebbi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 12:04:05 by adchebbi          #+#    #+#              #
-#    Updated: 2026/04/15 12:30:07 by adchebbi         ###   ########.fr        #
+#    Updated: 2026/04/15 13:02:55 by adchebbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -108,6 +108,8 @@ fclean: clean
 	@printf "$(RED)🧼 Full clean$(RESET)\n"
 	@make fclean -C $(LIBFT_DIR) --silent
 	@$(RM) $(NAME)
+	@sleep 1
+	@clear
 #                                           #
 re: fclean all
 #                                           #

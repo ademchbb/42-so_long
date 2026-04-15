@@ -38,7 +38,7 @@ The project compiles with `cc` and the flags `-Wall -Wextra -Werror`.
 
 ### Execution
 
-Run from the project root (the binary looks for `textures/` relative to its location):
+Run from the project root :
 
 ```bash
 ./so_long maps/test.ber
@@ -73,7 +73,16 @@ Rules:
 - Must be fully enclosed by walls (`1`)
 - Must have a valid path from `P` to every `C` and to `E`
 
-Example valid map (`maps/test.ber`):
+Example valid map (`maps/test.ber`)
+```
+1111111111111
+10010000000C1
+1000011111001
+1P0011E000001
+1111111111111
+```
+
+Example invalid map :
 ```
 11111
 1P0C1
@@ -99,7 +108,6 @@ The game uses 64×64 XPM sprites located in `textures/`:
 - [MiniLibX documentation (42docs)](https://harm-smits.github.io/42docs/libs/minilibx)
 - [MiniLibX Linux repository](https://github.com/42Paris/minilibx-linux)
 - [X11 events reference](https://tronche.com/gui/x/xlib/events/)
-- `man 2 open` / `man 3 free` / `man 2 exit`
 
 ### AI usage
 
