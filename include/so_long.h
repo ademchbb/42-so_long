@@ -6,7 +6,7 @@
 /*   By: adchebbi <adchebbi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 12:04:14 by adchebbi          #+#    #+#             */
-/*   Updated: 2026/04/15 12:04:15 by adchebbi         ###   ########.fr       */
+/*   Updated: 2026/04/15 12:30:19 by adchebbi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define SO_LONG_H
 
 # include "../libft/libft.h"
-# include "../mlx/mlx.h"
+# include "../minilibx-linux/mlx.h"
 # include "stdlib.h"
 # include "stdio.h"
 # include "unistd.h"

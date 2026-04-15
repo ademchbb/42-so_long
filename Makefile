@@ -6,7 +6,7 @@
 #    By: adchebbi <adchebbi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/15 12:04:05 by adchebbi          #+#    #+#              #
-#    Updated: 2026/04/15 12:04:08 by adchebbi         ###   ########.fr        #
+#    Updated: 2026/04/15 12:30:07 by adchebbi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ RM          = rm -f
 SRC_DIR     = src
 INC_DIR     = include
 LIBFT_DIR   = libft
-MLX_DIR     = mlx
+MLX_DIR     = minilibx-linux
 #                                           #
 # ***************************************** #
 
