@@ -78,7 +78,12 @@ $(LIBFT):
 	@make -C $(LIBFT_DIR) --silent
 	@printf "$(GREEN)✅ Libft ready$(RESET)\n"
 #                                           #
-$(MLX):
+$(MLX_DIR):
+	@printf "$(YELLOW)📥 Cloning MiniLibX...$(RESET)\n"
+	@git clone https://github.com/42Paris/minilibx-linux.git $(MLX_DIR) --quiet
+	@printf "$(GREEN)✅ MiniLibX cloned$(RESET)\n"
+
+$(MLX): | $(MLX_DIR)
 	@printf "$(YELLOW)📚 Compiling mlx...$(RESET)\n"
 	@chmod +x $(MLX_DIR)/configure
 	@make -C $(MLX_DIR) --silent
@@ -96,15 +101,13 @@ $(NAME): $(OBJS) $(LIBFT) $(MLX)
 clean:
 	@printf "$(RED)🧹 Cleaning object files$(RESET)\n"
 	@make clean -C $(LIBFT_DIR) --silent
-	@make clean -C $(MLX_DIR) --silent
+	@[ -d $(MLX_DIR) ] && make clean -C $(MLX_DIR) --silent || true
 	@$(RM) $(OBJS)
 #                                           #
 fclean: clean
 	@printf "$(RED)🧼 Full clean$(RESET)\n"
 	@make fclean -C $(LIBFT_DIR) --silent
 	@$(RM) $(NAME)
-	@sleep 1
-	@clear
 #                                           #
 re: fclean all
 #                                           #
